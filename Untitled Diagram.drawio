@@ -1,1 +1,56 @@
-<mxfile host="app.diagrams.net" modified="2022-09-27T06:34:25.718Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.3.6" etag="dQxees4fKmRTNKb0nU0Z" type="github"><diagram id="gICHb7lY2PP1OVBeGGQ9">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-27T07:00:53.231Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="W1fQV7RdmQmWyEVpZLyh" version="20.3.6" type="github">
+  <diagram id="gICHb7lY2PP1OVBeGGQ9" name="Page-1">
+    <mxGraphModel dx="946" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0VDTfUj6NnnNQMYOYcvo-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="135" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Guest User&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;fontColor=none;" edge="1" parent="1" source="0VDTfUj6NnnNQMYOYcvo-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="695" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Authenticated User&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="60" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=none;" edge="1" parent="1" source="0VDTfUj6NnnNQMYOYcvo-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=none;" edge="1" parent="1" source="0VDTfUj6NnnNQMYOYcvo-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-5" value="The initial home screen is loaded.So we check if in lf in local storage we have stored any encodedDealIds." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="62.5" y="230" width="177.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;fontColor=none;" edge="1" parent="1" source="0VDTfUj6NnnNQMYOYcvo-8" target="0VDTfUj6NnnNQMYOYcvo-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="685" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-8" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;The initial home screen is loaded.So we fetch all deals for the current authenticated user.&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="600" y="230" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-16" value="If yes - we Promise.all the deals based on encodedDealIds we have store in localStorage and set them on deal array state." style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="340" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-17" value="If no - we wait the guest user to scan the QR.In order to that we start to storing in local storage every encodedDealId the guest user scanned and add it to the deal array state." style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry y="340" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="0VDTfUj6NnnNQMYOYcvo-19" value="When the authenticated user scans the qr we send request to the back end which returns the deal based on the scanned endodedDealId(and we push this to the deal state array) and automatically links this deal to the user." style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="370" width="230" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
